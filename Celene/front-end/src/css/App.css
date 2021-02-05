@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Italic.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Bold';
+    src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Manjari';
+    src: url('../assets/fonts/Manjari-Bold.ttf');
+}
+@font-face {
+    font-family: 'Hachi';
+    src: url('../assets/fonts/HachiMaruPop-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto_Slab';
+    src: url('../assets/fonts/RobotoSlab-Medium.ttf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Light.ttf');
+}
+@font-face {
+    font-family: 'Inter-Semi';
+    src: url('../assets/fonts/Inter-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Med';
+    src: url('../assets/fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'BerkshireSwash';
+    src: url('../assets/fonts/BerkshireSwash-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../assets/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url('../assets/fonts/Inter-Black.ttf');
+}
+
+.dashed_url{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='10%2c10' stroke-dashoffset='5' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.button_carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23CA9975FF' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+    height: 4vw;
+    width: 15vw;
+}
+body{
+    padding-top: 7vh;   
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.toggler:focus {outline:0 }
+
+nav .logo{
+    flex: 1;
+    font-family: 'Hachi';
+    font-size:30px;
+    color: black;
+    text-emphasis: top;
+}
+.full {
+  color: red;
+}
+
+.rating-love {
+  position: relative;
+  display:inline-block;
+  margin-right: 2px;
+}
+
+.rate {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu_button{
+    display: none;
+    margin-top: 10px;
+}
+
+.shopping-logo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;  
+}
+.shopping-logo img{  
+    cursor: pointer;
+}
+._navbar{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    top: 0; 
+    height:7vh;
+    z-index: 50;
+    width: 100%;
+}
+.heart{
+    color:red
+}
+nav .nav-links{
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    top: 10;
+    margin: 0;
+}
+.vl {
+    border-left: 1px dashed #8A6645;
+    height: 30px;
+    transform: rotate(20deg);
+}
+nav {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+nav .nav-links a{
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.signin_border{
+    height:89%;
+    width:50%
+}
+
+
+.dropdrop{
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+@media all and (max-width: 1000px){
+    nav .nav-links a{
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width: 700px){
+    nav .nav-links a{
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 600px){
+    nav .nav-links{
+        display: none;
+    }
+    ._navbar{
+        padding:0
+    }
+    nav .logo{
+        display: flex;
+        margin-left: 15%;
+    } 
+    .shopping-logo{
+        position: absolute;
+        right:0;
+        top:10px;
+    }
+    .menu_button{
+        display: block;
+    }
+    
+    .signin_border{
+        width:80%;
+    }
+
+    .dropdrop{
+        font-size: 60px;
+        background-color: red;
+    }
+}
+.alert {
+    padding: 1 rem;
+    border: 0.1rem solid transparent;
+    border: 0.5rem;
+}
+
+.alert-info{
+    color:#2020a0;
+    background-color: #e0e0ff;
+}
+
+.alert-error{
+    color: #a02020;
+    background-color: #ffe0e0e0;
+}
+input,
+select,
+textarea,
+button{
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size:1.6rem ;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.card-body{
+    padding: 1rem;
+  }
+.card-body > *{
+    margin-bottom: 0.5rem;
+
+}
